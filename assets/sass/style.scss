@@ -1,0 +1,26 @@
+/*
+Theme Name: School Template
+Theme URI: ""
+Author: Karan Soni
+Author URI: https://mkaran99.com
+Description: This a template for school webiste
+Version: 1.0.0
+
+Please update required change from dedicated place.
+
+DO NOT EDIT CSS FILE.
+
+Please use Live SCSS Compiler if using VS-CODE editor as IDE and
+compiler settings are in .vscode folder of project.
+
+If using other method to compile, plese compile to output path as ./css/style.css
+*/
+
+@import './common/common'; // All base styles are controlled from here.
+@import './components/components'; // All components styles are controlled from here.
+@import './modules/modules'; // All modules styles are managed from here.
+
+/*
+Don't add any styles here.
+Rather create a sub file and link to its required place.
+*/

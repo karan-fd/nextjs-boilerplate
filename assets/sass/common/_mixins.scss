@@ -1,0 +1,39 @@
+@mixin FLEX($align: center, $justify: flex-start, $dis: flex) {
+  display: $dis;
+  align-items: $align;
+  justify-content: $justify;
+}
+@mixin OBJFIT($fit: cover, $pos: center, $width: 100%, $height: 100%) {
+  width: $width;
+  height: $height;
+  object-fit: $fit;
+  object-position: $pos;
+}
+@mixin MARGIN($m: 0) {
+  margin: $m;
+  &:last-child {
+    margin: 0;
+  }
+}
+@mixin HTag($tag: 6, $size: 1.125rem) {
+  h#{$tag},
+  .h#{$tag} {
+    color: $black;
+    font-size: #{$size};
+    line-height: 1.2;
+  }
+}
+@mixin SCRBAR($sz: 0.3125rem, $ff-sz: thin, $track: #d6d6d6, $thumb: black) {
+  scrollbar-width: $ff-sz;
+  overscroll-behavior: contain;
+  &::-webkit-scrollbar {
+    width: $sz;
+    height: $sz;
+  }
+  &::-webkit-scrollbar-track {
+    background: $track;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $thumb;
+  }
+}

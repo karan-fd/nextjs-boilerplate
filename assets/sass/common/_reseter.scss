@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  -webkit-tap-highlight-color: transparent;
+  font-display: swap;
+  font-optical-sizing: auto;
+}
+body {
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+}
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+input,
+select,
+textarea,
+button {
+  all: unset;
+  box-sizing: border-box;
+}
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+svg {
+  width: 100%;
+  height: 100%;
+}
+section {
+  position: relative;
+  z-index: 10;
+}
